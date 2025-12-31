@@ -33,7 +33,7 @@ class passwordRule implements Rule
      */
     public function passes($attribute, $value)
     {
-        return preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/', $value);
+        return preg_match('/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\da-zA-Z]).{6,}$/', $value);
     }
 
     /**

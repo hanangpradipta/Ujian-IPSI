@@ -11,14 +11,6 @@ use App\Http\Requests\Auth\role\editRequest;
 use App\Http\Requests\Auth\role\roleRequest;
 use App\Repositories\Auth\Role\RoleResponse;
 
-/*
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
 class RoleController extends Controller
 {
     protected $RoleResponse;

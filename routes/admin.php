@@ -10,17 +10,6 @@ use App\Http\Controllers\Admin\Auth\RoleController;
 use App\Http\Controllers\Admin\Master\CustomerController;
 use App\Http\Controllers\Admin\Dashboard\dashboardController;
 
-/*
-|--------------------------------------------------------------------------
-| Admin Routes
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
-
 /**
  * Dashboard
  */

@@ -12,14 +12,6 @@ use App\Http\Requests\customer\editRequest;
 use App\Http\Requests\customer\customerRequest;
 use App\Repositories\Customer\CustomerResponse;
 
-/*
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
 class CustomerController extends Controller
 {
 

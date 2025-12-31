@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Register | Raungdev</title>
+    <title>System Register</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,11 +87,11 @@
                     </svg>
                   </span>
 
-                  <span class="app-brand-text demo text-body fw-bolder">RuangDev</span>
+                  <span class="app-brand-text demo text-body fw-bolder"></span>
                 </a>
               </div>
 
-              <h4 class="mb-2">System Register RuangDev</h4>
+              <h4 class="mb-2">Register as Admin</h4>
               <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('register') }}">
                 @csrf
 

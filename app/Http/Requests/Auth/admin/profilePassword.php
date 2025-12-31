@@ -5,15 +5,6 @@ namespace App\Http\Requests\Auth\admin;
 use App\Rules\admin\passwordRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-/*
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
-
 class profilePassword extends FormRequest
 {
     /**

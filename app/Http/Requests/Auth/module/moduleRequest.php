@@ -4,15 +4,6 @@ namespace App\Http\Requests\Auth\module;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-/*
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
-
 class moduleRequest extends FormRequest
 {
     /**

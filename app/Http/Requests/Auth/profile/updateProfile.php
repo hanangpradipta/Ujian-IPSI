@@ -5,14 +5,6 @@ namespace App\Http\Requests\Auth\profile;
 use App\Rules\customer\numberPhoneRule;
 use Illuminate\Foundation\Http\FormRequest;
 
-/*
-|--------------------------------------------------------------------------
-| Rumah Dev
-| Backend Developer : ibudirsan
-| Email             : ibnudirsan@gmail.com
-| Copyright © Raungdev 2022
-|--------------------------------------------------------------------------
-*/
 
 class updateProfile extends FormRequest
 {

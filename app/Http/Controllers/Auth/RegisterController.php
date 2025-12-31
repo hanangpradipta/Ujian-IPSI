@@ -12,16 +12,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Register Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users as well as their
-    | validation and creation. By default this controller uses a trait to
-    | provide this functionality without requiring any additional code.
-    |
-    */
+   
 
     use RegistersUsers;
 
@@ -58,9 +49,6 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        $google2fa      = app('pragmarx.google2fa');
-        $NewSecretKey   = $google2fa->generateSecretKey();
-
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -69,15 +57,15 @@ class RegisterController extends Controller
         ]);
             $user->profile()->create([
                 'user_id'       => $user->id,
-                'fullName'      => 'Fulan',
-                'imageName'     => 'ImageFulan',
+                'fullName'      => $user->name,
+                'imageName'     => 'Image',
                 'pathImage'     => 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y',
                 'numberPhone'   => '0',
                 'TeleID'        => '0',
             ]);
                 $user->secret()->create([
                     'user_id'   => $user->id,
-                    'secret2Fa' => $NewSecretKey
+
                 ]);
                     return $user;
     }
